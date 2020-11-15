@@ -1,8 +1,7 @@
 <?php
-
-include "header.php"
+    $tittle = "Register";
+    require_once "header.php";
 ?>
-
 
 <div class="container register pt-5 mx-auto">
     <form action="?action=register" class="w-100 mx-auto" method="post" autocomplete="off">
@@ -37,6 +36,4 @@ include "header.php"
 </div>
 
 <?php
-
-include "footer.php"
-?>
+require_once "footer.php" ?>

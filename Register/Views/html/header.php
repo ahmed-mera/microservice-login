@@ -18,10 +18,7 @@
         <!-- my Css   -->
         <link rel="stylesheet" href="../css/main.css">
         <title>
-            <?php
-                $tittle = "Home";
-                echo $tittle;
-            ?>
+            <?= $tittle == null ? "Home"  : $tittle; ?>
         </title>
     </head>
     <body>
