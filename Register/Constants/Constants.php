@@ -9,6 +9,8 @@ class Constants {
     public static string $PASSWORDS_NOT_EQUAL = "Le password non corrispondono";
     public static string $USER_INSERT = "User inserito correttamnete";
     public static string $USER_NOT_INSERT = "User non inserito, riprova";
+    public static string $Email_SENT = "Email inviata correttamente, controlla la tua email.";
+    public static string $Email_NOT_SENT = "Email non inviata perché si è verificato un errore.";
 
 
 }

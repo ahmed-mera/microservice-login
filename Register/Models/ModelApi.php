@@ -1,18 +1,31 @@
 <?php
 
 
-require_once "../../DBMSR/Connection.php";
+class ModelApi implements GenericModel {
 
-class ModelApi {
+    private PDO $connection;
+
+    /**
+     * ModelApi constructor.
+     * @param ConfigurationDB $connections
+     * @throws PDOException if the attempt to connect to the requested database fails.
+     * @author Ahmed Mera
+     */
+    public function __construct(ConfigurationDB $connections) {
+        $this->connection = $connections->connect();
+    }
+
 
     /**
      * helper function to insert into db
-     * @param array ...$data
+     * @param array[] ...$data
      * @return int
+     * @author Alessandro Grassi
      */
-    public function insert(...$data){
-        global $con;
-        $statement = $con->prepare("INSERT INTO client_users (fname, lname, email, password,date) VALUES(?, ?, ?, ?,now())");
+    public function insert(...$data): int{
+
+        $statement = $this->connection->prepare("INSERT INTO client_users (fname, lname, email, password, date) VALUES(?, ?, ?, ?, now())");
+
         $statement->execute(array(
             $data['fname'],
             $data['lname'],
@@ -26,14 +39,13 @@ class ModelApi {
 
     /**
      * helper function to get user if exists
-     * @param $email String
-     * @return bool value
+     * @param String $email
+     * @return int
+     * @author Alessandro Grassi
      */
-    public function isExistsUser(string $email){
-        global $con;
-        $statement = $con->prepare("SELECT email FROM client_users WHERE email = ?");
+    public function isExistsUser(string $email): int{
+        $statement = $this->connection->prepare("SELECT email FROM client_users WHERE email = ?");
         $statement->execute(array($email));
-
         return $statement->rowCount();
     }
 }

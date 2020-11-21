@@ -4,6 +4,16 @@
 ?>
 
 <div class="container register pt-5 mx-auto">
+
+    <?php  if(isset($this->errors) && ! empty($this->errors)){ ?>
+                <div class="alert alert-danger pb-0" role="alert">
+                    <?php  foreach ($this->errors as $error){
+                        echo "<p class='pb-2 pt-2'> {$error} </p> <hr />";
+                    } ?>
+                </div>
+   <?php  } ?>
+
+
     <form action="?action=register" class="w-100 mx-auto" method="post" autocomplete="off">
         <h1 class="text-capitalize text-center mt-5 mb-5">Register</h1>
         <div class="form-row">
@@ -31,7 +41,7 @@
             </div>
 
         </div>
-        <button class="btn btn-primary btn-md btn-rounded" type="submit">Register</button>
+        <button name="app" class="btn btn-primary btn-md btn-rounded" type="submit">Register</button>
     </form>
 </div>
 

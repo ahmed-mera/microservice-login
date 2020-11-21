@@ -1,9 +1,9 @@
 <html lang="it">
     <head>
         <meta charset="UTF-8">
-<!--        <link rel="icon" href="page3/images/logo.red.pieno.png" />-->
+        <link rel="icon" href="https:mera.ddns.net/page3/images/logo.red.pieno.png" />
         <meta name="description" content="Home page">
-        <meta name="keywords" content="Microservice by php and MySql">
+        <meta name="keywords" content="Microservices by php and MySql">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="format-detection" content="telephone=no">

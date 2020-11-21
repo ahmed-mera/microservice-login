@@ -1,0 +1,12 @@
+{
+	"5fb3fcaabeff3": {
+		"error_msg": "could not find driver",
+		"error_file": "\/var\/www\/html\/MicroServizi\/DBMSR\/Connection.php",
+		"error_line": 7
+	},
+	"5fb6dd198dd08": {
+		"error_msg": "SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.18.0.2' (using password: NO)",
+		"error_file": "\/var\/www\/html\/MicroServizi\/DBMSR\/Connection.php",
+		"error_line": 9
+	}
+}
