@@ -104,7 +104,7 @@ private string $email;
      * @return bool|string
      * @author Ahmed Mera
      */
-    public function sendEmail(): bool | string {
+    public function sendEmail() {
         try {
             return $this->mail->send();
         } catch (Exception $e) {

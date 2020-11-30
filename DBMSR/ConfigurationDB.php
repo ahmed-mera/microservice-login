@@ -50,7 +50,7 @@ class ConfigurationDB{
      * @param PDOException $e
      * @return int | false The function returns the number of bytes that were written to the file, or
      */
-    public function saveError(PDOException $e): int | false {
+    public function saveError(PDOException $e) {
         $file = __DIR__.'/error.json';
 
         $this->checkFile($file);
@@ -76,7 +76,7 @@ class ConfigurationDB{
      * @return bool | string
      * @author Ahmed Mera
      */
-    private function checkFile(string $file): bool | string {
+    private function checkFile(string $file) {
         if(! file_exists($file)) {
             touch($file); // create file
            return chmod($file, 0766); // change permission all for owner, read and write for other

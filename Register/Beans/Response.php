@@ -35,10 +35,10 @@ class Response{
     }
 
     /**
-     * @return string | array
+     * @return string|array
      * @author Ahmed Mera
      */
-    public function getResponse(): string | array{
+    public function getResponse(){
         return $this->response;
     }
 

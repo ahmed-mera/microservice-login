@@ -49,7 +49,7 @@ class Utils {
      * @return string | null
      * @author Ahmed Mera
      */
-    public static function createToken($key): string | null{
+    public static function createToken($key){
         return password_hash($key, PASSWORD_ARGON2ID);
     }
 
@@ -62,7 +62,7 @@ class Utils {
      * if an error occurred.
      * @author Ahmed Mera
      */
-    public function isValidData(string $data): int | false{
+    public function isValidData(string $data){
         return preg_match(Utils::$pattern, $data);
     }
 
