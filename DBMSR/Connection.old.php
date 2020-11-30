@@ -3,13 +3,12 @@
     $user = 'admin';
     $pass = '1998';
     
-    // echo phpinfo();
+    // Ahmed Mera
 
     try {
         $con = new PDO($dns , $user, $pass);
         $con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     } catch (PDOException $e) {
-        echo $e;
        $file = __DIR__.'/error.json';
        if(! file_exists($file)) {
            touch($file); // create file
@@ -20,8 +19,10 @@
 
        $ERROR[uniqid()] =  array(
            'error_msg'  => $e->getMessage(),
-           'error_file' => $e->getFile(),
-           'error_line' => $e->getLine()
+            'error_file' => $e->getFile(),
+            'error_line' => $e->getLine(),
+            'error_code' => $e->getCode(),
+            'date'       => date("d-m-Y H:i:s")
        );
 
        file_put_contents($file, json_encode($ERROR),  LOCK_EX); // save on file

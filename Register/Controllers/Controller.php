@@ -8,6 +8,16 @@ spl_autoload_register(function ($class){
 
 class Controller implements GenericController {
 
+    private ControllerApp $controllerApp;
+    /**
+     * Controller constructor.
+     */
+    public function __construct()
+    {
+        $this->controllerApp = new ControllerApp();
+
+    }
+
 
     /**
      * function to invoke the controller
@@ -15,6 +25,7 @@ class Controller implements GenericController {
      */
     public function start(): void
     {
-        // TODO: Implement start() method.
+        $this->controllerApp->start();
+
     }
 }

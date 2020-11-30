@@ -1,12 +1,1 @@
-{
-	"5fb3fcaabeff3": {
-		"error_msg": "could not find driver",
-		"error_file": "\/var\/www\/html\/MicroServizi\/DBMSR\/Connection.php",
-		"error_line": 7
-	},
-	"5fb6dd198dd08": {
-		"error_msg": "SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.18.0.2' (using password: NO)",
-		"error_file": "\/var\/www\/html\/MicroServizi\/DBMSR\/Connection.php",
-		"error_line": 9
-	}
-}
+{"5fb3fcaabeff3":{"error_msg":"could not find driver","error_file":"\/var\/www\/html\/MicroServizi\/DBMSR\/Connection.php","error_line":7},"5fb6dd198dd08":{"error_msg":"SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.18.0.2' (using password: NO)","error_file":"\/var\/www\/html\/MicroServizi\/DBMSR\/Connection.php","error_line":9},"5fbd44eb03699":{"error_msg":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known","error_file":"\/var\/www\/html\/MicroServizi\/DBMSR\/Connection.old.php","error_line":10,"error_code":2002,"date":"24-11-2020 17:37:47"},"5fbd4501732d9":{"error_msg":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known","error_file":"\/var\/www\/html\/MicroServizi\/DBMSR\/Connection.old.php","error_line":10,"error_code":2002,"date":"24-11-2020 17:38:09"},"5fbd45022db2a":{"error_msg":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known","error_file":"\/var\/www\/html\/MicroServizi\/DBMSR\/Connection.old.php","error_line":10,"error_code":2002,"date":"24-11-2020 17:38:10"},"5fbd45025a8e8":{"error_msg":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known","error_file":"\/var\/www\/html\/MicroServizi\/DBMSR\/Connection.old.php","error_line":10,"error_code":2002,"date":"24-11-2020 17:38:10"},"5fbd4521d179c":{"error_msg":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known","error_file":"\/var\/www\/html\/MicroServizi\/DBMSR\/Connection.old.php","error_line":10,"error_code":2002,"date":"24-11-2020 17:38:41"}}
